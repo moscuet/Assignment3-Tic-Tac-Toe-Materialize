@@ -124,7 +124,9 @@ const clickhandle = (id) => {
       let result = updateScore(activePlayer);
       if (result) {
         res.innerHTML = `${activePlayer} won!!`;
-        alert(`${activePlayer} won!!`);
+        setTimeout(function () {
+          alert(`Player ${activePlayer} won!!`);
+        }, 1000);
         reSet();
       }
       activePlayer = activePlayer === "player1" ? "player2" : "player1";
