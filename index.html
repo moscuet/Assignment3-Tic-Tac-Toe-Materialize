@@ -26,16 +26,23 @@
           <button id="player1">Player1</button>
           <button id="player2">Player2</button>
         </div>
+        <!-- progressbar -->
         <div style="height: 24px; width: 25%; background: silver;">
-          <div id="myBar" style="height: 24px; width: 0; background: red;">
+          <div id="myBara" style="height: 24px; width: 0; background: red;">
             Progress
           </div>
         </div>
+
+        <div id="progress" style="width: 25%;" class="progress">
+          <div id="myBar" class="determinate" style="width: 0%;"></div>
+        </div>
+
         <div id="board"></div>
         <div id="result">result</div>
       </div>
     </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="src/index.js"></script>
   </body>
 </html>
